@@ -18,6 +18,9 @@
 		049944FF254A1F4E00E83E90 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049944FE254A1F4E00E83E90 /* ExploreItem.swift */; };
 		04994503254A208A00E83E90 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994502254A208A00E83E90 /* ExploreDataManager.swift */; };
 		04994507254A257800E83E90 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994506254A257800E83E90 /* ExploreCell.swift */; };
+		0499450D254A306F00E83E90 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499450C254A306F00E83E90 /* LocationViewController.swift */; };
+		04994510254A33D800E83E90 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0499450F254A33D800E83E90 /* Locations.plist */; };
+		04994513254A359A00E83E90 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994512254A359A00E83E90 /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		049944FE254A1F4E00E83E90 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		04994502254A208A00E83E90 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		04994506254A257800E83E90 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		0499450C254A306F00E83E90 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		0499450F254A33D800E83E90 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		04994512254A359A00E83E90 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		0496C98725455D5000F624CB /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				04994509254A300700E83E90 /* Location */,
 				0451AAB22547A79F00B3C852 /* Restaurants */,
 				0496C9A4254566E500F624CB /* Explore */,
 				0496C98825455D5000F624CB /* AppDelegate.swift */,
@@ -110,6 +117,32 @@
 			isa = PBXGroup;
 			children = (
 				04994506254A257800E83E90 /* ExploreCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04994509254A300700E83E90 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				0499450B254A304500E83E90 /* View */,
+				0499450A254A301100E83E90 /* Model */,
+				0499450C254A306F00E83E90 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		0499450A254A301100E83E90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0499450F254A33D800E83E90 /* Locations.plist */,
+				04994512254A359A00E83E90 /* LocationDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0499450B254A304500E83E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +207,7 @@
 				049944FC254A1E6A00E83E90 /* ExploreData.plist in Resources */,
 				0496C99525455D5200F624CB /* LaunchScreen.storyboard in Resources */,
 				0496C9A1254563D000F624CB /* Assets.xcassets in Resources */,
+				04994510254A33D800E83E90 /* Locations.plist in Resources */,
 				0496C99025455D5000F624CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +226,8 @@
 				0496C9A72545673900F624CB /* ExploreViewController.swift in Sources */,
 				04994503254A208A00E83E90 /* ExploreDataManager.swift in Sources */,
 				04994507254A257800E83E90 /* ExploreCell.swift in Sources */,
+				04994513254A359A00E83E90 /* LocationDataManager.swift in Sources */,
+				0499450D254A306F00E83E90 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
