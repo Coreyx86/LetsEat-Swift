@@ -14,6 +14,10 @@
 		0496C99525455D5200F624CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0496C99325455D5200F624CB /* LaunchScreen.storyboard */; };
 		0496C9A1254563D000F624CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0496C9A0254563D000F624CB /* Assets.xcassets */; };
 		0496C9A72545673900F624CB /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496C9A62545673900F624CB /* ExploreViewController.swift */; };
+		049944FC254A1E6A00E83E90 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049944FB254A1E6A00E83E90 /* ExploreData.plist */; };
+		049944FF254A1F4E00E83E90 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049944FE254A1F4E00E83E90 /* ExploreItem.swift */; };
+		04994503254A208A00E83E90 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994502254A208A00E83E90 /* ExploreDataManager.swift */; };
+		04994507254A257800E83E90 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994506254A257800E83E90 /* ExploreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		0496C99625455D5200F624CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0496C9A0254563D000F624CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0496C9A62545673900F624CB /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		049944FB254A1E6A00E83E90 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
+		049944FE254A1F4E00E83E90 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		04994502254A208A00E83E90 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		04994506254A257800E83E90 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +89,29 @@
 		0496C9A4254566E500F624CB /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				04994505254A253300E83E90 /* View */,
+				049944FA254A1E5100E83E90 /* Model */,
 				0496C9A62545673900F624CB /* ExploreViewController.swift */,
 			);
 			path = Explore;
+			sourceTree = "<group>";
+		};
+		049944FA254A1E5100E83E90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				049944FB254A1E6A00E83E90 /* ExploreData.plist */,
+				049944FE254A1F4E00E83E90 /* ExploreItem.swift */,
+				04994502254A208A00E83E90 /* ExploreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04994505254A253300E83E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04994506254A257800E83E90 /* ExploreCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049944FC254A1E6A00E83E90 /* ExploreData.plist in Resources */,
 				0496C99525455D5200F624CB /* LaunchScreen.storyboard in Resources */,
 				0496C9A1254563D000F624CB /* Assets.xcassets in Resources */,
 				0496C99025455D5000F624CB /* Main.storyboard in Resources */,
@@ -156,10 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049944FF254A1F4E00E83E90 /* ExploreItem.swift in Sources */,
 				0496C98925455D5000F624CB /* AppDelegate.swift in Sources */,
 				0451AAB42547A82A00B3C852 /* RestaurantListViewController.swift in Sources */,
 				0496C98B25455D5000F624CB /* SceneDelegate.swift in Sources */,
 				0496C9A72545673900F624CB /* ExploreViewController.swift in Sources */,
+				04994503254A208A00E83E90 /* ExploreDataManager.swift in Sources */,
+				04994507254A257800E83E90 /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
