@@ -26,6 +26,11 @@
 		0499451E254A3DA200E83E90 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499451D254A3DA200E83E90 /* MapDataManager.swift */; };
 		04994522254A3EEE00E83E90 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994521254A3EEE00E83E90 /* DataManager.swift */; };
 		04994525254A40D500E83E90 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994524254A40D500E83E90 /* MapViewController.swift */; };
+		0499452B254B83D500E83E90 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499452A254B83D500E83E90 /* RestaurantDetail.storyboard */; };
+		0499452E254B83E000E83E90 /* ReviewForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499452D254B83E000E83E90 /* ReviewForm.storyboard */; };
+		04994531254B849400E83E90 /* Seque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994530254B849400E83E90 /* Seque.swift */; };
+		04994534254B86D600E83E90 /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04994533254B86D600E83E90 /* PhotoFilter.storyboard */; };
+		04994537254B877600E83E90 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994536254B877600E83E90 /* RestaurantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		0499451D254A3DA200E83E90 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		04994521254A3EEE00E83E90 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		04994524254A40D500E83E90 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0499452A254B83D500E83E90 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
+		0499452D254B83E000E83E90 /* ReviewForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewForm.storyboard; sourceTree = "<group>"; };
+		04994530254B849400E83E90 /* Seque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seque.swift; sourceTree = "<group>"; };
+		04994533254B86D600E83E90 /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
+		04994536254B877600E83E90 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,9 @@
 		0496C98725455D5000F624CB /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				04994529254B81B100E83E90 /* PhotoFilter */,
+				04994528254B81A200E83E90 /* ReviewForm */,
+				04994527254B818F00E83E90 /* RestaurantDetail */,
 				04994520254A3ED800E83E90 /* Misc */,
 				04994515254A39B800E83E90 /* Map */,
 				04994509254A300700E83E90 /* Location */,
@@ -182,8 +195,34 @@
 			isa = PBXGroup;
 			children = (
 				04994521254A3EEE00E83E90 /* DataManager.swift */,
+				04994530254B849400E83E90 /* Seque.swift */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		04994527254B818F00E83E90 /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0499452A254B83D500E83E90 /* RestaurantDetail.storyboard */,
+				04994536254B877600E83E90 /* RestaurantDetailViewController.swift */,
+			);
+			path = RestaurantDetail;
+			sourceTree = "<group>";
+		};
+		04994528254B81A200E83E90 /* ReviewForm */ = {
+			isa = PBXGroup;
+			children = (
+				0499452D254B83E000E83E90 /* ReviewForm.storyboard */,
+			);
+			path = ReviewForm;
+			sourceTree = "<group>";
+		};
+		04994529254B81B100E83E90 /* PhotoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				04994533254B86D600E83E90 /* PhotoFilter.storyboard */,
+			);
+			path = PhotoFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +284,11 @@
 			files = (
 				049944FC254A1E6A00E83E90 /* ExploreData.plist in Resources */,
 				0496C99525455D5200F624CB /* LaunchScreen.storyboard in Resources */,
+				04994534254B86D600E83E90 /* PhotoFilter.storyboard in Resources */,
+				0499452E254B83E000E83E90 /* ReviewForm.storyboard in Resources */,
 				0496C9A1254563D000F624CB /* Assets.xcassets in Resources */,
 				04994510254A33D800E83E90 /* Locations.plist in Resources */,
+				0499452B254B83D500E83E90 /* RestaurantDetail.storyboard in Resources */,
 				04994518254A3AB800E83E90 /* MapLocations.plist in Resources */,
 				0496C99025455D5000F624CB /* Main.storyboard in Resources */,
 			);
@@ -264,7 +306,9 @@
 				0499451E254A3DA200E83E90 /* MapDataManager.swift in Sources */,
 				0496C98925455D5000F624CB /* AppDelegate.swift in Sources */,
 				0451AAB42547A82A00B3C852 /* RestaurantListViewController.swift in Sources */,
+				04994531254B849400E83E90 /* Seque.swift in Sources */,
 				0496C98B25455D5000F624CB /* SceneDelegate.swift in Sources */,
+				04994537254B877600E83E90 /* RestaurantDetailViewController.swift in Sources */,
 				04994525254A40D500E83E90 /* MapViewController.swift in Sources */,
 				0496C9A72545673900F624CB /* ExploreViewController.swift in Sources */,
 				04994503254A208A00E83E90 /* ExploreDataManager.swift in Sources */,
