@@ -10,7 +10,10 @@ import UIKit
 class ExploreViewController: UIViewController, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
     let manager = ExploreDataManager()
+    var selectedCity:LocationItem?
+    var headerView:ExploreHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +35,23 @@ private extension ExploreViewController {
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue) {
         
     }
+    
+    @IBAction func unwindLocationDone(segue:UIStoryboardSegue) {
+        if let viewController = segue.source as? LocationViewController {
+            selectedCity = viewController.selectedCity
+            if let location = selectedCity {
+                headerView.lblLocation.text = location.full
+            }
+        }
+    }
 }
 
 // MARK: UICollectionViewDataSource
 extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        headerView = header as? ExploreHeaderView
         return headerView
     }
     
