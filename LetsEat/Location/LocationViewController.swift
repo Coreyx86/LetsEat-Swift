@@ -19,6 +19,23 @@ class LocationViewController: UIViewController {
         super.viewDidLoad()
         initialize()
     }
+    
+    func set(selected cell:UITableViewCell, at indexPath:IndexPath) {
+        if let city = selectedCity?.city {
+            let data = manager.findLocation(by: city)
+            
+            if data.isFound {
+                if indexPath.row == data.position {
+                    cell.accessoryType = .checkmark
+                }
+                else {
+                    cell.accessoryType = .none
+                }
+            } else {
+                cell.accessoryType = .none
+            }
+        }
+    }
 }
 
 

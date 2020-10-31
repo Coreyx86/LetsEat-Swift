@@ -23,5 +23,13 @@ class LocationDataManager : DataManager {
     func locationItem(at index:IndexPath) -> LocationItem {
         return locations[index.item]
     }
-
+    
+    func findLocation(by name:String) -> (isFound:Bool, position:Int) {
+        guard let index = locations.firstIndex(where:{$0.city == name}) else {
+            return (isFound:false, position:0)
+        }
+        
+        return (isFound: true, position:index)
+    }
+    
 }
