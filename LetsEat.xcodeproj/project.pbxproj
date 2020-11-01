@@ -52,6 +52,8 @@
 		0499456A254DCCCB00E83E90 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994569254DCCCB00E83E90 /* RestaurantDataManager.swift */; };
 		0499456E254DCF3A00E83E90 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499456D254DCF3A00E83E90 /* NoDataView.swift */; };
 		04994571254DCFC400E83E90 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04994570254DCFC400E83E90 /* NoDataView.xib */; };
+		04994574254F243D00E83E90 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994573254F243D00E83E90 /* RatingsView.swift */; };
+		04994577254F2CD700E83E90 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04994576254F2CD700E83E90 /* ReviewFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		04994569254DCCCB00E83E90 /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
 		0499456D254DCF3A00E83E90 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		04994570254DCFC400E83E90 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
+		04994573254F243D00E83E90 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		04994576254F2CD700E83E90 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				0499452D254B83E000E83E90 /* ReviewForm.storyboard */,
+				04994573254F243D00E83E90 /* RatingsView.swift */,
+				04994576254F2CD700E83E90 /* ReviewFormViewController.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -412,12 +418,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0499456A254DCCCB00E83E90 /* RestaurantDataManager.swift in Sources */,
+				04994577254F2CD700E83E90 /* ReviewFormViewController.swift in Sources */,
 				0499453F254BAAAD00E83E90 /* LocationItem.swift in Sources */,
 				04994560254DA38400E83E90 /* ExploreHeaderView.swift in Sources */,
 				049944FF254A1F4E00E83E90 /* ExploreItem.swift in Sources */,
 				04994522254A3EEE00E83E90 /* DataManager.swift in Sources */,
 				0499451E254A3DA200E83E90 /* MapDataManager.swift in Sources */,
 				0499453B254BA25300E83E90 /* RestaurantAPIManager.swift in Sources */,
+				04994574254F243D00E83E90 /* RatingsView.swift in Sources */,
 				0496C98925455D5000F624CB /* AppDelegate.swift in Sources */,
 				0451AAB42547A82A00B3C852 /* RestaurantListViewController.swift in Sources */,
 				04994531254B849400E83E90 /* Seque.swift in Sources */,
